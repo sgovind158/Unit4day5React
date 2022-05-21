@@ -2,6 +2,16 @@ Navbar
    Location
    Icon + text
 
+   Offers 
+      Offers
+
+Filters 
+   filter
+
+
+Restarants
+   Restarants
+
 Image Scaling Component
 
 filter
