@@ -34,7 +34,7 @@ const Navbar = (props) => {
             <div className="navbar-options">
                
                     {navbarOption.map((el)=>(
-                         <div className="navbar-option">
+                         <div key={el.iconName}  className="navbar-option">
                          <span className="material-icons">{el.iconName}</span> {el.label}
                      </div>
                         

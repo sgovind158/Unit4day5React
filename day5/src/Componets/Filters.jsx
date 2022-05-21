@@ -1,26 +1,28 @@
 import React from 'react'
 
-const Filters = () => {
+const Filters = ({ filters, currentFilteredBy,updatedFilter}) => {
   return (
     <div className="container restaurants">
     <h1>50 restaurants</h1>
     <div className="restaurant-options">
-        <div className="restaurant-option">
-            Cost High to Lost
-        </div>
+        {Object.entries(filters).map((key,value)=>(     
+         
+          
 
-        <div className="restaurant-option">
-            Cost Lost to High
-        </div>
-        <div className="restaurant-option">
-            Ratings
-        </div>
-        <div className="restaurant-option">
-            Delivery Time
-        </div>
-        <div className="restaurant-option">
-            Relevance
-        </div>
+    <div key = {value}  className={`restaurant-option ${currentFilteredBy === value ?"underline" :""}`} onClick= {() => 
+       
+            updatedFilter(value)
+         }
+    
+    
+    > 
+              {key}
+     </div>
+
+        ))}
+       
+
+        
         
     </div>
 </div>

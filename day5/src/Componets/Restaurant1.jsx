@@ -12,9 +12,10 @@ const Restaurant1 = ({restaurants}) => {
                    </div>
                    <div className="restaurant-info">
                        <div className="restaurant-ratings">
-                           <i className="material-icons star-icon">star</i> {restaurants.rating}
+                           <i className="material-icons star-icon">star</i>{`${restaurants.rating}` }
+                          
                        </div>
-                        .<div className="restaurant-delivery-timings">{restaurants.deliveryTimings}</div> .
+                        .<div className="restaurant-delivery-timings">{`${restaurants.deliveryTimings} Delivery Time`}</div> .
                        <div className="restaurant-cost-for-two">{restaurants.costForTwo}</div>
                    </div>
                    <div className="offer-banner">

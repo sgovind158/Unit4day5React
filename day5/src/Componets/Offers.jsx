@@ -5,8 +5,8 @@ const Offers = (props) => {
     <section className="offers">
     <div className="container">
 
-        {props.offers.map((el)=>(
-            <img className="offer" src={el}/>
+        {props.offers.map((el,index)=>(
+            <img key={index} className="offer" src={el}/>
         )
          
         )}
